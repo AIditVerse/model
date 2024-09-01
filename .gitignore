@@ -1,3 +1,5 @@
-/Model Training/Contracts for training
-/Model Training/labels.pkl
-/Model Training/preprocessed_data.pkl
+/NLP Model Training/Contracts for training
+/NLP Model Training/Preprocessed Data/*
+/NLP Model Training/archive
+/NLP Model Training/Code
+/CFG Model Training/AST/*

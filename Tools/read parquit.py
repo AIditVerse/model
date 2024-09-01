@@ -31,12 +31,12 @@ def save_source_code_to_solidity(directory):
             # Print the columns of the DataFrame
             print(f"Columns in {parquet_file}: {df.columns.tolist()}")
 
-            if 'source_code' not in df.columns:
+            if 'source_codes' not in df.columns:
                 print(f"'source_code' column not found in {parquet_file}. Skipping this file.")
                 continue
             
             for i, row in df.iterrows():
-                source_code = row['source_code']
+                source_code = row['source_codes']
                 filename = f"source_code_{file_counter}.sol"  # Use file_counter for unique filenames
                 with open(filename, 'w', encoding='utf-8') as f:
                     f.write(source_code)
@@ -47,5 +47,5 @@ def save_source_code_to_solidity(directory):
         print(f"Error: Directory not found. Please check the path: {directory}")
 
 # Example usage
-directory = "C:\\Users\\Cody\\Downloads"
+directory = "C:\\Users\\Cody\\Desktop\\FYP Project\\Code\\AI Model\\Model Training"
 save_source_code_to_solidity(directory)

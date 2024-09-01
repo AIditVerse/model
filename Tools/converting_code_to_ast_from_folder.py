@@ -22,7 +22,7 @@ def parse_and_save_ast(folder_path, ast_folder_path):
             continue  # Skip to the next file
         
         # Create a directory to store AST files if it doesn't exist
-        ast_folder = os.path.join(ast_folder_path, 'UR')
+        ast_folder = os.path.join(ast_folder_path, 'testing123')
         os.makedirs(ast_folder, exist_ok=True)
         
         # Save the AST to a file
@@ -33,8 +33,8 @@ def parse_and_save_ast(folder_path, ast_folder_path):
         print(f"Processed {file_name}")
 
 # Provide the folder path here
-folder_path = './Code/Contracts for training/Re-entrancy'  # Adjust the path as per your folder location
-ast_folder_path = './AST'
+folder_path = "Model Training\AST\Testing data\\non-vulnerable"  # Adjust the path as per your folder location
+ast_folder_path = './Model Training/AST'
 
 # Call the function to parse and save ASTs
 parse_and_save_ast(folder_path, ast_folder_path)

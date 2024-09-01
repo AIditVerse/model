@@ -4,7 +4,7 @@ import pprint
 from solidity_parser import parser
 
 # Provide the file path here
-file_path = './smart-contracts/dataset/CV/hardcoded_gas_limits.sol'  # Adjust the path as per your file location
+file_path = '/Contracts for training/reentrant_contracts/0x0da76de0916ef2da3c58a97e4d09d501c56a9f15.sol'  # Adjust the path as per your file location
 
 sourceUnit = parser.parse_file(file_path, loc=True)  # loc=True -> add location information to ast nodes
 pprint.pprint(sourceUnit)
